@@ -32,22 +32,46 @@ const Experience = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-10">
-                <div className="flex items-center gap-6">
+              <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mb-10">
+                <div className="flex items-start gap-6">
                   <div className="w-16 h-16 flex-shrink-0 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
                     <Briefcase size={32} />
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <h3 className="text-2xl font-bold tracking-tight">{exp.role}</h3>
                     <p className="text-lg font-medium text-primary/80">{exp.company}</p>
+                    
+                    {/* Mobile & Tablet Portrait View: Stacked under BSNL */}
+                    <div className="flex lg:hidden flex-col gap-3 text-slate-500 dark:text-slate-400 mt-4">
+                      <div className="flex items-center gap-3 text-sm font-bold uppercase tracking-widest">
+                        <div className="w-5 flex justify-center flex-shrink-0">
+                          <Calendar size={16} className="text-primary/60" />
+                        </div>
+                        <span>{exp.duration}</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-sm">
+                        <div className="w-5 flex justify-center flex-shrink-0">
+                          <MapPin size={16} className="text-primary/60" />
+                        </div>
+                        <span>{exp.location}</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="flex flex-col md:items-end gap-2 text-slate-500 dark:text-slate-400">
-                  <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest">
-                    <Calendar size={16} /> {exp.duration}
+
+                {/* Desktop & Tablet Landscape View: Right-aligned */}
+                <div className="hidden lg:flex flex-col items-end gap-3 text-slate-500 dark:text-slate-400">
+                  <div className="flex items-center gap-3 text-sm font-bold uppercase tracking-widest">
+                    <div className="w-5 flex justify-center flex-shrink-0">
+                      <Calendar size={16} className="text-primary/60" />
+                    </div>
+                    <span>{exp.duration}</span>
                   </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <MapPin size={16} /> {exp.location}
+                  <div className="flex items-center gap-3 text-sm">
+                    <div className="w-5 flex justify-center flex-shrink-0">
+                      <MapPin size={16} className="text-primary/60" />
+                    </div>
+                    <span>{exp.location}</span>
                   </div>
                 </div>
               </div>

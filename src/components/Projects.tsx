@@ -16,14 +16,14 @@ const Projects = () => {
       desc: 'A smart solar panel system that tracks the sun\'s movement to maximize energy efficiency.',
       icon: <Sun size={24} />,
       tags: ['Arduino', 'Solar Energy', 'IoT'],
-      image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=800&h=600',
+      image: '/sun-tracking-solar-pic.png',
     },
     {
       title: 'Learning Projects Portfolio',
       desc: 'A collection of UI designs, portfolio templates, and future tools built during my web development journey.',
       icon: <Layout size={24} />,
       tags: ['Web Dev', 'UI/UX', 'Portfolio'],
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800&h=600',
+      image: '/portfolio-grid.png',
     },
   ];
 

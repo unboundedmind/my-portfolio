@@ -49,7 +49,7 @@ const Contact = () => {
                 </div>
                 <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Location</p>
                 <p className="text-xl font-bold mb-4">Raigarh, Chhattisgarh, India</p>
-                <p className="text-slate-500 font-medium">Open to Remote Work</p>
+                <p className="text-slate-500 font-medium">Open to Work</p>
               </motion.div>
             </div>
           </motion.div>

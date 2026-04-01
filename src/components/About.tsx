@@ -62,7 +62,7 @@ const About = () => {
           >
             <div className="aspect-[4/5] rounded-[3rem] overflow-hidden glass p-4">
               <img 
-                src="https://picsum.photos/seed/study/800/1000" 
+                src="/learning-journey1.png" 
                 alt="Learning Journey"
                 className="w-full h-full object-cover rounded-[2.5rem]"
                 referrerPolicy="no-referrer"

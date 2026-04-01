@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className="py-12 px-6 md:px-12 lg:px-24 bg-slate-50 dark:bg-slate-900/30 border-t border-slate-100 dark:border-white/5">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8 items-center">
         <div className="flex flex-col items-center md:items-start gap-4">
           <a href="#" className="text-2xl font-bold tracking-tighter text-primary">AD.</a>
           <p className="text-sm text-slate-500 dark:text-slate-400 max-w-xs text-center md:text-left">
@@ -15,14 +15,14 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="flex items-center gap-6 text-slate-400">
+        <div className="flex items-center justify-center gap-6 text-slate-400 md:order-last lg:order-none md:col-span-2 lg:col-span-1">
           <a href="https://github.com/unboundedmind" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors"><Github size={20} /></a>
           <a href="https://www.linkedin.com/in/itsanchaldewangan" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors"><Linkedin size={20} /></a>
           <a href="https://www.instagram.com/itsanchaldewangan" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors"><Instagram size={20} /></a>
         </div>
 
-        <div className="flex flex-col items-center md:items-end gap-2 text-sm text-slate-500 dark:text-slate-400">
-          <p className="flex items-center gap-1">
+        <div className="flex flex-col items-center md:items-end gap-2 text-sm text-slate-500 dark:text-slate-400 text-center md:text-right">
+          <p className="flex items-center gap-1 justify-center md:justify-end whitespace-nowrap">
             Made with <Heart size={14} className="text-red-500 fill-red-500" /> by Anchal Dewangan
           </p>
           <p>© {currentYear} All rights reserved.</p>

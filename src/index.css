@@ -28,6 +28,6 @@
     @apply bg-slate-900/70 border-white/10;
   }
   .section-padding {
-    @apply py-20 px-6 md:px-12 lg:px-24;
+    @apply py-20 px-6 md:px-12 lg:px-24 scroll-mt-20;
   }
 }

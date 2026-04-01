@@ -4,7 +4,7 @@ import { Sparkles, ArrowRight } from 'lucide-react';
 
 const ContentCreator = () => {
   return (
-    <section className="section-padding bg-primary/5 dark:bg-primary/10 relative overflow-hidden">
+    <section id="content-creator" className="section-padding bg-primary/5 dark:bg-primary/10 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl -mr-32 -mt-32" />
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl -ml-32 -mb-32" />
